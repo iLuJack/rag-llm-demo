@@ -57,7 +57,7 @@ The workflow is:
 - Python 3.9.13, this is the version more stable with the machine learning packages
 - Dependencies listed in `requirements.txt`
 
-## Setup for Non-Coders
+## Setup
 
 ### Step 1: Install Python (Windows)
 

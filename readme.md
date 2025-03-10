@@ -21,7 +21,7 @@ When you run the code, it will create several files and directories:
   
   This database allows the system to quickly find relevant information when you ask questions.
 
-- `venv/` - Directory created during setup that contains the Python virtual environment
+- `venv/` - Directory created during setup that contains the Python virtual environment (think of this as a separate, clean installation of Python just for this project)
 
 - Terminal outputs:
   - `document_loader.py` will show which documents were loaded and how many chunks were created
@@ -264,6 +264,8 @@ You have two options to download the project:
    - It finds the most relevant text pieces in the database
    - It sends your question and the relevant text to the AI model
    - The AI generates an answer based on the provided information
+
+5. **RAG**: is a way to combine the power of AI and your own documents to answer questions.
 
 ## License
 

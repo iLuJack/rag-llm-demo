@@ -288,6 +288,8 @@ You have two options to download the project:
 
 5. **RAG**: is a way to combine the power of AI and your own documents to answer questions.
 
+6. [RAG docs](https://huggingface.co/docs/transformers/en/model_doc/rag)
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

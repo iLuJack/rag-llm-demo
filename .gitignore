@@ -1,0 +1,18 @@
+# code
+test-token.py
+
+# data
+chroma_db
+
+# env
+.env
+.tool-versions
+
+# cache
+__pycache__
+.DS_Store
+
+# venv
+.venv
+my-venv
+new-venv

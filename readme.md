@@ -2,6 +2,25 @@
 
 This project demonstrates a Retrieval-Augmented Generation (RAG) chatbot using Ollama and LangChain. The chatbot can answer questions about legal documents in Traditional Chinese, specifically the Civil Law text included in the data directory.
 
+## Table of Contents
+- [Project Structure](#project-structure)
+- [Generated Files and Outputs](#generated-files-and-outputs)
+- [Requirements](#requirements)
+- [Setup for Non-Coders](#setup-for-non-coders)
+  - [Step 1: Install Python (Windows)](#step-1-install-python-windows)
+  - [Step 1: Install Python (Mac)](#step-1-install-python-mac)
+  - [Step 2: Download This Project](#step-2-download-this-project)
+    - [Option 1: Download ZIP](#option-1-download-zip-no-git-required)
+    - [Option 2: Clone with Git](#option-2-clone-with-git-for-users-familiar-with-git)
+  - [Step 3: Set Up the Project (Windows)](#step-3-set-up-the-project-windows)
+  - [Step 3: Set Up the Project (Mac)](#step-3-set-up-the-project-mac)
+  - [Step 4: Install Ollama](#step-4-install-ollama)
+  - [Step 5: Run the Chatbot](#step-5-run-the-chatbot)
+- [Troubleshooting](#troubleshooting)
+  - [Common Issues](#common-issues)
+- [How It Works](#how-it-works-for-the-curious)
+- [License](#license)
+
 ## Project Structure
 
 - `document_loader.py` - Loads and processes text documents

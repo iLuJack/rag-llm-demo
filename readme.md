@@ -6,7 +6,7 @@ This project demonstrates a Retrieval-Augmented Generation (RAG) chatbot using O
 - [Project Structure](#project-structure)
 - [Generated Files and Outputs](#generated-files-and-outputs)
 - [Requirements](#requirements)
-- [Setup for Non-Coders](#setup-for-non-coders)
+- [Setup](#setup)
   - [Step 1: Install Python (Windows)](#step-1-install-python-windows)
   - [Step 1: Install Python (Mac)](#step-1-install-python-mac)
   - [Step 2: Download This Project](#step-2-download-this-project)

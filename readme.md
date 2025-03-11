@@ -217,6 +217,10 @@ You have two options to download the project:
 
 ### Step 5: Run the Chatbot
 
+You have two options to run the chatbot:
+
+#### Option 1: Run in Terminal
+
 1. Make sure your virtual environment is activated (you should see "(venv)" at the beginning of the command line)
 
 2. Process the documents (only needed once):
@@ -231,7 +235,7 @@ You have two options to download the project:
      python embedding_store.py
      ```
 
-3. Start the chatbot:
+3. Start the terminal-based chatbot:
    - Windows:
      ```
      python ollama_rag_chatbot.py
@@ -241,10 +245,28 @@ You have two options to download the project:
      python ollama_rag_chatbot.py
      ```
 
-4. Ask questions:
-   - Type your question about Taiwan Civil Law in the terminal
-   - The chatbot will respond with an answer based on the documents
-   - Type "exit" to quit the chatbot
+#### Option 2: Run with Streamlit Interface (Recommended)
+
+1. Make sure your virtual environment is activated (you should see "(venv)" at the beginning of the command line)
+
+2. Process the documents (if you haven't already):
+   ```
+   python document_loader.py
+   python embedding_store.py
+   ```
+
+3. Start the Streamlit interface:
+   ```
+   streamlit run app.py
+   ```
+
+4. Your default web browser will automatically open to the chatbot interface
+   - If it doesn't open automatically, you can manually visit the URL shown in the terminal (usually http://localhost:8501)
+   - The interface allows you to:
+     - Ask questions in Chinese or English
+     - See the chat history
+     - View the source documents for each answer
+     - Interact with a more user-friendly interface
 
 ## Troubleshooting
 

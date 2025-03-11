@@ -6,7 +6,6 @@ chroma_db
 
 # env
 .env
-.tool-versions
 
 # cache
 __pycache__

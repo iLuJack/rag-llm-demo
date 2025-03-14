@@ -1,4 +1,8 @@
-# this needs a paid plan, so it's nothing but a nonsense. 
+"""
+this is just a test file for openai api ability, 
+it turns out that it's nothing but a nonsense, 
+because it requires a paid plan
+"""
 from openai import OpenAI
 import os
 from dotenv import load_dotenv

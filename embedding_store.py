@@ -1,3 +1,7 @@
+"""
+this is RAG part
+"""
+
 # embedding_store.py - This file converts text into numbers (embeddings) that AI can understand
 
 # Import necessary tools:

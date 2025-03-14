@@ -6,6 +6,7 @@ This project demonstrates a Retrieval-Augmented Generation (RAG) chatbot using O
 
 ## Table of Contents
 - [Project Structure](#project-structure)
+- [Component Overview](#component-overview)
 - [Generated Files and Outputs](#generated-files-and-outputs)
 - [Requirements](#requirements)
 - [Setup](#setup)
@@ -28,8 +29,25 @@ This project demonstrates a Retrieval-Augmented Generation (RAG) chatbot using O
 - `document_loader.py` - Loads and processes text documents
 - `embedding_store.py` - Creates and manages vector embeddings for document chunks
 - `ollama_rag_chatbot.py` - Main chatbot implementation using Ollama and RAG
+- `app.py` - Streamlit web interface for the chatbot
 - `data/` - Directory containing demo text documents (民法、刑法、公司法原文)
 - `.env` - Environment file for API keys or tokens (not included in repo)
+
+## Component Overview
+
+The project is organized into three main components:
+
+1. **RAG (Retrieval-Augmented Generation) Component**:
+   - `document_loader.py` - Handles loading text documents and splitting them into manageable chunks
+   - `embedding_store.py` - Converts text chunks into vector embeddings and creates a searchable database
+
+2. **LLM (Large Language Model) Component**:
+   - `ollama_rag_chatbot.py` - Implements the core chatbot functionality, connecting the RAG system with the Ollama LLM
+
+3. **User Interface Component**:
+   - `app.py` - Provides a web-based interface using Streamlit, allowing users to interact with the chatbot
+
+This modular design allows each component to be developed, tested, and improved independently.
 
 ## Generated Files and Outputs
 
@@ -53,6 +71,7 @@ The workflow is:
 1. `document_loader.py` reads text files from `data/` and splits them into chunks
 2. `embedding_store.py` converts these chunks into vectors and stores them in `chroma_db/`
 3. `ollama_rag_chatbot.py` uses the `chroma_db/` to find relevant information when answering questions
+4. `app.py` provides a user-friendly web interface to interact with the chatbot
 
 ## Requirements
 

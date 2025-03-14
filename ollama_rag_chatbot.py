@@ -1,3 +1,7 @@
+"""
+this is LLM part
+"""
+
 # ollama_rag_chatbot.py - This file creates the AI chatbot that answers questions using documents
 
 # Import necessary tools:

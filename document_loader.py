@@ -1,3 +1,6 @@
+"""
+this is RAG part
+"""
 # document_loader.py - This file handles loading and preparing text documents
 
 # Import necessary tools:

@@ -19,7 +19,20 @@ from dotenv import load_dotenv
 # Import our custom functions from the other files
 from document_loader import process_documents
 from embedding_store import create_vector_store, load_vector_store
+import platform
+import asyncio
 
+# Handle uvloop compatibility
+if platform.system() != "Windows":
+    try:
+        import uvloop
+        asyncio.set_event_loop_policy(uvloop.EventLoopPolicy())
+        print("Using uvloop for better performance")
+    except ImportError:
+        print("uvloop not available, using standard asyncio event loop")
+else:
+    print("Running on Windows, using standard asyncio event loop")
+    
 # Load environment variables from .env file
 load_dotenv()
 

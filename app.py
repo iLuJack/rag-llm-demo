@@ -5,7 +5,19 @@ this is streamlit part
 
 import streamlit as st
 from ollama_rag_chatbot import setup_rag_system, ask_question
+import platform
+import asyncio
 
+# Handle uvloop compatibility
+if platform.system() != "Windows":
+    try:
+        import uvloop
+        asyncio.set_event_loop_policy(uvloop.EventLoopPolicy())
+        print("Using uvloop for better performance")
+    except ImportError:
+        print("uvloop not available, using standard asyncio event loop")
+else:
+    print("Running on Windows, using standard asyncio event loop")
 # Set page configuration
 st.set_page_config(
     page_title="Taiwan Legal Assistant",

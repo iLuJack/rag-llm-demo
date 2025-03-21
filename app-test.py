@@ -4,7 +4,6 @@ this is streamlit part
 # app.py - Streamlit interface for the Taiwan Legal Assistant chatbot
 
 import streamlit as st
-from ollama_rag_chatbot import setup_rag_system, ask_question
 
 # Set page configuration
 st.set_page_config(
@@ -17,11 +16,8 @@ st.set_page_config(
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
-if "rag_chain" not in st.session_state:
-    st.title("Taiwan Legal Assistant")
-    with st.spinner("Setting up the system... This may take a minute..."):
-        st.session_state.rag_chain = setup_rag_system()
-    st.success("System ready!")
+st.title("Taiwan Legal Assistant")
+st.success("System ready!")
 
 # Display header
 st.header("Taiwan Legal Assistant")
@@ -53,10 +49,8 @@ if user_question:
         message_placeholder = st.empty()
         
         with st.spinner("Thinking..."):
-            answer, source_docs = ask_question(st.session_state.rag_chain, user_question)
-            
-            # Format sources
-            sources = [doc.metadata['source'] for doc in source_docs]
+            answer = "this is a test answer" 
+            sources = ["test-source1", "test-source2"]
             
             # Display answer
             message_placeholder.markdown(answer)

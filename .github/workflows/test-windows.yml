@@ -5,11 +5,12 @@ on: [push, workflow_dispatch]
 jobs:
   test-windows:
     runs-on: windows-latest
+    timeout-minutes: 15
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.9.13'
           
@@ -23,7 +24,11 @@ jobs:
         
       - name: Save logs
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: windows-logs
           path: logs/
+
+      - name: Create logs directory
+        run: mkdir -p logs
+        shell: bash
